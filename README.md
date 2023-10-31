@@ -18,7 +18,7 @@
 and activate it:
     ```bash
     python3 -m venv .venv # create virtual environment
-    source .venv/bin/activate # activate virtual environment
+    source .venv/Scripts/activate # activate virtual environment
     deactivate # DO NOT RUN YET: deactivates virtual environment
     ```
 
@@ -131,9 +131,20 @@ root of the project named as *terraform.tfvars*, changing the property *project_
 
 17. Verify that the pods are up and running:
     ```bash
+    # To check if pods are up and running
     kubectl get pods -n airflow
 
-    kubectl get svc -n airflow
+    # Access worket pod and install required libraries
+    kubectl exec -it <pod_name> -n airflow -- bash
+    kubectl exec -it airflow-worker-0 -n airflow -- bash
+    kubectl exec -it airflow-scheduler-6d8dd9b78b-kw7ck -n airflow -- bash
+    pip install gdown # On scheduler and worker
+
+    # To access the Airflow UI in the browser
+    kubectl port-forward svc/airflow-web 8080:8080 --namespace airflow
+
+    # Access Auirflow UI
+    http://127.0.0.1:8080/
     ```
 
 18. Access the Airflow dashboard with what the Helm chart provided:

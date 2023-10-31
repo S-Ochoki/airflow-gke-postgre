@@ -69,3 +69,7 @@ pgbouncer:
  ## if the pgbouncer Deployment is created
  ##
  enabled: false
+
+airflow:
+  extraPipPackages:
+    - "gdown==4.7.1"
