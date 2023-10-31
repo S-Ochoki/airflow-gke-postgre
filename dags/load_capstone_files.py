@@ -17,15 +17,18 @@ from airflow.providers.postgres.operators.postgres import PostgresOperator
 )
 def ProcessEmployees():
     create_employees_table = PostgresOperator(
-        task_id="create_employees_table",
+        task_id="create_user_purchase_table",
         postgres_conn_id="capstone_postgres",
         sql="""
-            CREATE TABLE IF NOT EXISTS employees (
-                "Serial Number" NUMERIC PRIMARY KEY,
-                "Company Name" TEXT,
-                "Employee Markme" TEXT,
-                "Description" TEXT,
-                "Leave" INTEGER
+            CREATE TABLE capstone.user_purchase (
+            invoice_number varchar(10),
+            stock_code varchar(20),
+            detail varchar(1000),
+            quantity int,
+            invoice_date timestamp,
+            unit_price numeric(8,3),
+            customer_id int,
+            country varchar(20)
             );""",
     )
 
