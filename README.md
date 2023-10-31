@@ -178,6 +178,7 @@ dashboard.
 - To destroy the cluster:
     ```bash
     terraform destroy --var-file=terraform.tfvars
+    deactivate # deactivate venv
     ```
 - Double-check your GCP console to make sure everything was correctly destroyed.
 
