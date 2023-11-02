@@ -3,7 +3,6 @@
 
 ## Prerequisites
 - [Configured GCP account](https://cloud.google.com/)
-- [Homebrew](https://brew.sh/) (if you're using MacOS)
 - [Kubectl cli](https://kubernetes.io/docs/tasks/tools/) (choose the OS you're working with)
 - [gCloud SDK](https://cloud.google.com/sdk/docs/quickstart)
 - [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) >= 0.13
