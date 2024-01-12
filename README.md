@@ -2,6 +2,8 @@
 
 The objective of the project was to use the GCP technologies and data engineering techniques to build an end-to-end solution for movie analytics data warehouse.
 
+Find a presentation [here](https://github.com/S-Ochoki/airflow-gke-postgre/blob/main/Movie%20Analytics%20Project%20Presentation.pptx)
+
 Below are instructions on how I set up the infrastructure to run my pipeline code and store data:
 
 
