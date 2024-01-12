@@ -1,4 +1,8 @@
-# Google Kubernetes Engine (GKE), Airflow and Terraform template
+# Google Kubernetes Engine (GKE), Airflow and Terraform
+
+The objective of the project was to use the GCP technologies and data engineering techniques to build an end-to-end solution for movie analytics data warehouse.
+
+Below are instructions on how I set up the infrastructure to run my pipeline code and store data:
 
 
 ## Prerequisites
@@ -7,7 +11,6 @@
 - [gCloud SDK](https://cloud.google.com/sdk/docs/quickstart)
 - [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) >= 0.13
 - [Helm 3](https://helm.sh/docs/intro/install/)
-
 
 ## Step by step guide
 1. Clone this repository.
