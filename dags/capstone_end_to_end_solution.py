@@ -40,7 +40,7 @@ from airflow.providers.google.cloud.transfers.gcs_to_bigquery import GCSToBigQue
 
 
 # General constants
-DAG_ID = "wizeline_capstone_end_to_end_v3"
+DAG_ID = "wizeline_capstone_end_to_end"
 STABILITY_STATE = "unstable"
 CLOUD_PROVIDER = "gcp"
 LOCAL_DATA_PATH = "/usr/local/airflow/dags/files/"
